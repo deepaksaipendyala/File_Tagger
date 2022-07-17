@@ -9,8 +9,22 @@ from os.path import exists
 
 
 import mysql.connector
-mydb=mysql.connector.connect(host="localhost",user="root",passwd="hidden",database="hackathon")
-mycursor=mydb.cursor()
+try:
+  mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="yourpassword",database="mydatabase")
+  mycursor = mydb.cursor()
+except:
+  mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="yourpassword")
+  mycursor = mydb.cursor()
+  mycursor.execute("CREATE DATABASE mydatabase") 
+
+
+mycursor.execute("CREATE TABLE IF NOT EXISTS tag_details (tag_name varchar(20),Filepath varchar(100))")
 
 
 
