@@ -1,5 +1,5 @@
 # File Tagger
-## Impplemented in Windows OS
+## Implemented in Windows OS
 
 #### We created a software that will help users organize their Files on disk using Tags.
 
@@ -26,7 +26,7 @@ labels.
 - OpenSourced Project, Pull requests are accepted.
 
 ### Created By : 
-- B . Prem Sundar
+- B Prem Sundar
 - Deepak Sai Pendyala
 - Gowtham Krishna Tadikamalla
 
